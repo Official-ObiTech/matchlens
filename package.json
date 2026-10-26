@@ -1,0 +1,20 @@
+{
+  "name": "football-prediction-platform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w @fpp/web",
+    "dev:mobile": "npm run start -w @fpp/mobile",
+    "build:web": "npm run build -w @fpp/web",
+    "test": "npm run test -w @fpp/core && npm run test -w @fpp/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "backtest": "npm run backtest -w @fpp/web --"
+  },
+  "engines": {
+    "node": ">=20.9"
+  }
+}

@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+dist/
+coverage/
+.expo/
+.vercel/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+.DS_Store
+apps/mobile/ios/
+apps/mobile/android/
+supabase/.temp/
